@@ -4,7 +4,7 @@
     --color_acento: #f97316;
 }
 
-.modo_dia{
+body.modo_dia{
     --color_fondo:#f1f5f9;
     --color_texto:#0f172a;
     --color_acento: #ea580c;
@@ -31,6 +31,7 @@ body{
     border-radius: 10px;
     font-family: sans-serif;
     background-color: rgba(0, 0, 0, 0.2);
+    margin:0px
 }
 
 #menuIcon{
@@ -69,6 +70,7 @@ body{
     border-radius: 10px;
     box-sizing: border-box;
     font-family: sans-serif;
+    transition: 0.3s;
 }
 
 .oculto{
@@ -78,4 +80,118 @@ body{
 
 .desplazado{
     transform: translateX(250px);
+}
+
+#buscar {
+    background-color: var(--color_fondo);
+    padding: 12px;
+    color: var(--color_texto);
+    border-radius: 10px;
+    font-size: 14px;
+    border: 2px solid grey;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+}
+
+#buscarLabel {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    color: grey;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s ease;
+    background-color: var(--color_fondo); 
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.input-contenedor{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#buscar:focus {
+    border-color: var(--color_texto);
+}
+
+#buscar:focus ~ #buscarLabel,
+#buscar:not(:placeholder-shown) ~ #buscarLabel {
+    top: -10px;
+    font-size: 12px;
+    color: var(--color_texto);
+}
+
+#buscarBtn{
+    border: none;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--color_fondo);
+    color: var(--color_texto);
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 100%;
+    transition: 0.3s;
+}
+
+#buscarBtn:hover{
+    background-color: #0f172a;
+}
+
+#prediccion{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#prediccion li{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px 5px;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#prediccion li .dia{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+#prediccion li{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#ciudad{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#temperatura{
+    font-size:1.8rem ;
+    font-weight: 800;
+    margin: 10px 0;
+    color: var(--color_acento);
+}
+
+#icono_clima{
+    margin: 10px 0;
+    width: 5rem;
 }

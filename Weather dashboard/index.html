@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="sidebar">
+    <div id="sidebar" class="oculto">
         <div id="busqueda">
-            <label for="buscar">Buscar ciudad</label>
-            <input type="text" id="buscar">
+            <div class="input-contenedor">
+                <input type="text" id="buscar" placeholder=" ">
+                <label for="buscar" id="buscarLabel">Buscar ciudad</label>
+            </div>
             <button id="buscarBtn">Buscar</button>
         </div>
         <div id="favoritas">
@@ -25,12 +27,10 @@
         <img src="assets/icono_clima.png" id="icono_clima">
         <h1 id="ciudad">Ciudad</h1>
         <h2 id="temperatura">Temperatura</h2>
+        <div id="max-min">
+            Max: N grados Min: N grados
+        </div>
         <ul id="prediccion">
-            <li>Lunes</li>
-            <li>martes</li>
-            <li>miercoles</li>
-            <li>jueves</li>
-            <li>viernes</li>
         </ul>
     </div>
     <script src="script.js"></script>
