@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div id="busqueda">
+            <label for="buscar">Buscar ciudad</label>
+            <input type="text" id="buscar">
+            <button id="buscarBtn">Buscar</button>
+        </div>
+        <div id="favoritas">
+            <ul>
+                <li>Madrid</li>
+                <li>Barcelona</li>
+            </ul>
+        </div>
+    </div>
+    <button id="menuBtn"><img src="assets/menu.png" alt="Menu Icon" id="menuIcon"></button>
+    <div id="principal">
+        <img src="assets/icono_clima.png" id="icono_clima">
+        <h1 id="ciudad">Ciudad</h1>
+        <h2 id="temperatura">Temperatura</h2>
+        <ul id="prediccion">
+            <li>Lunes</li>
+            <li>martes</li>
+            <li>miercoles</li>
+            <li>jueves</li>
+            <li>viernes</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
