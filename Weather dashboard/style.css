@@ -4,10 +4,19 @@
     --color_acento: #f97316;
 }
 
-body.modo_dia{
+.modo_dia{
     --color_fondo:#f1f5f9;
     --color_texto:#0f172a;
     --color_acento: #ea580c;
+}
+
+.modo_dia #principal{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.modo_dia #prediccion li{
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 body{
@@ -19,6 +28,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    transition: backgroung-color 0.5s ease;
 }
 
 #principal{
@@ -140,7 +150,8 @@ body{
 }
 
 #buscarBtn:hover{
-    background-color: #0f172a;
+    transform: translateY(-2px);
+    box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #prediccion{
@@ -194,4 +205,19 @@ body{
 #icono_clima{
     margin: 10px 0;
     width: 5rem;
+    
+}
+
+.modo_dia #icono_clima,.modo-dia #prediccion img{
+    filter: drop-shadow(0px 3px 5px rgba(0,0,0,0.2));
+}
+
+.item-favorito{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
 }

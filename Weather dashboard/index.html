@@ -15,10 +15,14 @@
             </div>
             <button id="buscarBtn">Buscar</button>
         </div>
+        
         <div id="favoritas">
+            <h2>Favoritas</h2>
             <ul>
-                <li>Madrid</li>
-                <li>Barcelona</li>
+                <li class="item-fav">
+                    <span class="nombre-ciudad">Madrid</span>
+                    <button class="btn-eliminar">x</button>
+                </li>
             </ul>
         </div>
     </div>
@@ -26,9 +30,9 @@
     <div id="principal">
         <img src="assets/icono_clima.png" id="icono_clima">
         <h1 id="ciudad">Ciudad</h1>
-        <h2 id="temperatura">Temperatura</h2>
+        <h2 id="temperatura">--°C</h2>
         <div id="max-min">
-            Max: N grados Min: N grados
+            Max: --°C Min: --°C
         </div>
         <ul id="prediccion">
         </ul>
