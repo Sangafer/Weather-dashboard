@@ -10,7 +10,7 @@ const iconoClima = document.getElementById('icono_clima');
 const listaPrediccion = document.getElementById('prediccion');
 const listaFavoritos = document.querySelector('#favoritas ul'); // Seleccionamos el <ul> sin ID
 
-const API_key = "TU_API_KEY";
+const API_key = "1b7d9b5dabef1cf23108470b07eb6884";
 
 // --- 2. ESTADO DE LA APLICACIÓN ---
 let ciudadesFavoritas = JSON.parse(localStorage.getItem('favoritas')) || [];
