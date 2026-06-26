@@ -222,3 +222,22 @@ body{
     justify-content: space-between;
     border-radius: 10px;
 }
+
+@media (max-width:768px){
+    #principal{
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    #prediccion{
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 15px;
+        gap: 15px;
+    }
+
+    #prediccion li{
+        min-width: 80px;
+        flex-shrink: 0;
+    }
+}
